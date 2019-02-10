@@ -1,0 +1,27 @@
+{
+  "name": "statwatch-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/agam-chopra/statwatch",
+  "author": "Agam Chopra <work.agamchopra@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint --project './'",
+    "dev": "yarn lint && ts-node ./src/server.ts",
+    "start": "nodemon ./dist/server.js",
+    "prod": "yarn build && yarn start"
+  },
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "ts-node": "^8.0.1",
+    "tslint": "^5.12.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.2.4"
+  }
+}
