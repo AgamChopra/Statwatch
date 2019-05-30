@@ -1,5 +1,5 @@
 import booksResponse from './booksResponse.json';
-import Book from '../models/Book';
+import Book from '../models/Stat';
 import BookGrapApi from './BookBorrowApi';
 
 export default class MockApi implements BookGrapApi{
