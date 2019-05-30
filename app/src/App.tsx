@@ -1,25 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import BookBorrowApi from './api/BookBorrowApi';
+import MockApi from './api/MockApi';
+import BookList from './components/BookList';
 
 class App extends Component {
+  private api: BookBorrowApi = new MockApi;
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <BookList books={this.api.getBooks()}/>
       </div>
     );
   }
