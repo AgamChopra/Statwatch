@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
-import Book from '../models/Book';
+import Stat from '../models/Stat';
 
 interface BookItemProps {
-  book: Book;
+  stat: Stat;
 }
 
 class BookItem extends Component<BookItemProps> {
   render() {
-    const { book } = this.props;
+    const { stat } = this.props;
     return (
       <div>
         <h1>
-          { book.title }
+          { stat.title }
         </h1>
-        <img src = {book.thumbnail} alt = "thumbnail"/>
+        <img src = {stat.thumbnail} alt = "thumbnail"/>
         <h2>
-          { book.edition } by { book.author }
+          { stat.edition } by { stat.author }
         </h2>
       </div>
     );
   }
 }
 
-export default BookItem;
+export default StatItem;

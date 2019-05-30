@@ -1,4 +1,4 @@
-import Book from '../models/Book';
+import Book from '../models/Stat';
 
 export default interface BookBorrowApi {
   getBooks(): Book[];
