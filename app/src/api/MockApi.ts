@@ -1,20 +1,19 @@
-import booksResponse from './booksResponse.json';
-import Book from '../models/Stat';
-import BookGrapApi from './BookBorrowApi';
+import StatsResponse from './StatsResponse.json';
+import Stat from '../models/Stat';
+import StatGrapApi from './Statwatch';
 
-export default class MockApi implements BookGrapApi{
-  private books: Book[] = booksResponse.map(book => {
+export default class MockApi implements StatGrapApi{
+  private Stats: Stat[] = StatsResponse.map(Stat => {
     return {
-      ... book,
-      thumbnail: book.identifiers[0].thumbnail,
+      ... Stat
     };
   });
 
-  getBooks(): Book[] {
-    return this.books;
+  getStats(): Stat[] {
+    return this.Stats;
   }
 
-  getBook(id: number): Book {
-    return this.books[id];
+  getStat(id: number): Stat {
+    return this.Stats[id];
   }
 }

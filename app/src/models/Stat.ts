@@ -1,6 +1,7 @@
-export default interface Book {
-  title: string;
-  author: string;
-  edition: string;
-  thumbnail: string;
+export default interface Stat {
+  Btag: string;
+  rank: string;
+  dps: string;
+  heal: string;
+  tank: string;
 }

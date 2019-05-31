@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
 import Stat from '../models/Stat';
 
-interface BookItemProps {
+interface StatItemProps {
   stat: Stat;
 }
 
-class BookItem extends Component<BookItemProps> {
+class StatItem extends Component<StatItemProps> {
   render() {
     const { stat } = this.props;
     return (
       <div>
         <h1>
-          { stat.title }
+          { stat.Btag }
         </h1>
-        <img src = {stat.thumbnail} alt = "thumbnail"/>
+        rank: { stat.rank }
         <h2>
-          { stat.edition } by { stat.author }
+          Heroes:
         </h2>
+        <h2>dps: { stat.dps } healers: { stat.heal } tanks: { stat.tank }</h2>
       </div>
     );
   }
