@@ -6,14 +6,38 @@
     "dps": "Genji Hanzo Mccree",
     "heal": "Zenyata Ana Brig",
     "tank": "Zarya Hog Rein"
-    },
-    {
-      "id": 2,
-      "Btag": "Placeholder#1787",
-      "rank": "4450",
-      "dps": "Genji Hanzo Mccree",
-      "heal": "Zenyata Ana Brig",
-      "tank": "Zarya Hog Rein"
-      }
+  },
+  {
+    "id": 2,
+    "Btag": "Placeholder#1787",
+    "rank": "4450",
+    "dps": "Genji Hanzo Mccree",
+    "heal": "Zenyata Ana Brig",
+    "tank": "Zarya Hog Rein"
+  },
+  {
+    "id": 3,
+    "Btag": "Placeholder#5345",
+    "rank": "1450",
+    "dps": "Genji Hanzo Mccree",
+    "heal": "Zenyata Ana Brig",
+    "tank": "Zarya Hog Rein"
+  },
+  {
+    "id": 4,
+    "Btag": "Placeholder#0050",
+    "rank": "2450",
+    "dps": "Genji Hanzo Mccree",
+    "heal": "Zenyata Ana Brig",
+    "tank": "Zarya Hog Rein"
+  },
+  {
+    "id": 5,
+    "Btag": "Placeholder#5345",
+    "rank": "3450",
+    "dps": "Genji Hanzo Mccree",
+    "heal": "Zenyata Ana Brig",
+    "tank": "Zarya Hog Rein"
+  }
 ]
 
