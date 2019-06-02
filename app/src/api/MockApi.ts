@@ -1,11 +1,11 @@
 import StatsResponse from './StatsResponse.json';
 import Stat from '../models/Stat';
-import StatGrapApi from './Statwatch';
+import StatGrabApi from './Statwatch';
 
-export default class MockApi implements StatGrapApi{
+export default class MockApi implements StatGrabApi {
   private Stats: Stat[] = StatsResponse.map(Stat => {
     return {
-      ... Stat
+      ...Stat,
     };
   });
 
