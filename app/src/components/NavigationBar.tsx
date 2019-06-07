@@ -8,9 +8,11 @@ class NavigationBar extends Component {
     return (
       <div>
         <AppBar>
-          <Tab label="Item One" />
-          <Tab label="Item Two" />
-          <Tab label="Item Three" />
+          <Tabs value="3">
+            <Tab label="Home" />
+            <Tab label="Item One" />
+            <Tab label="Item Two" />
+          </Tabs>
         </AppBar>
       </div>
     );
