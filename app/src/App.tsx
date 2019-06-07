@@ -4,15 +4,16 @@ import StatwatchApi from './api/Statwatch';
 import MockApi from './api/MockApi';
 import StatList from './components/StatList';
 import Button from '@material-ui/core/Button';
-
+import NavigationBar from './components/NavigationBar';
 
 class App extends Component {
-  private api: StatwatchApi = new MockApi;
+  private api: StatwatchApi = new MockApi();
 
   render() {
     return (
       <div className="App">
-        <StatList stats={this.api.getStats()}/>
+        <NavigationBar />
+        <StatList stats={this.api.getStats()} />
         <Button variant="contained" color="primary">
           Hello World
         </Button>
