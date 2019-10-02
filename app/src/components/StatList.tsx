@@ -27,7 +27,7 @@ export default function StatList(props: StatListProps) {
       className={classes.root}
       maxWidth="md">
       { stats.map((stat, index) => (
-        <Grow in={true} timeout={200*index}>
+        <Grow key={`stat-${index}`} in={true} timeout={200*index}>
           <StatItem stat={stat} />
         </Grow>))}
     </Container>
