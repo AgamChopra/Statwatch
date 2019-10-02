@@ -1,21 +1,35 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Stat from '../models/Stat';
 import StatItem from './StatItem';
+import {
+  Grow,
+  Theme,
+  makeStyles,
+  Container
+} from '@material-ui/core';
+
+const useStyles = makeStyles((theme: Theme) => ({
+    root: {
+      padding: theme.spacing(3),
+    }
+  })
+);
 
 interface StatListProps {
   stats: Stat[];
 }
 
-class StatList extends Component <StatListProps> {
-  render() {
-    return (
-      this.props.stats.map(stat => {
-        return (
+export default function StatList(props: StatListProps) {
+  const classes = useStyles();
+  const { stats } = props;
+  return (
+    <Container
+      className={classes.root}
+      maxWidth="md">
+      { stats.map((stat, index) => (
+        <Grow in={true} timeout={200*index}>
           <StatItem stat={stat} />
-        );
-      })
-    );
-  }
+        </Grow>))}
+    </Container>
+  );
 }
-
-export default StatList;
